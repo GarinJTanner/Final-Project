@@ -16,9 +16,10 @@ nmap -sV 192.168.1
 This scan identifies the services below as potential points of entry:  
   
 Target 1  
-OpenSSH 6.7p1 Debian 5+deb8u4 (protocol 2.0)  
-Apache httpd 2.4.10 ((Debian))  
-The following vulnerabilities were identified on each target:  
+- OpenSSH 6.7p1 Debian 5+deb8u4 (protocol 2.0)  
+- Apache httpd 2.4.10 ((Debian))  
+  
+The following vulnerabilities were identified on each target:
 - Target 1
 - Weak server password
 - Unsalted hashed passwords
