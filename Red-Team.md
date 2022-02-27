@@ -83,10 +83,10 @@ use wordpress;
 show tables;
 select user_login, user_pass from wp_users;
 ~~~
-![red5](https://user-images.githubusercontent.com/32025331/155894960-bc91d0f1-f6ac-4d95-bc81-c3027734bba8.PNG)
-This is where we found the hashed passwords.  
+![red5](https://user-images.githubusercontent.com/32025331/155894960-bc91d0f1-f6ac-4d95-bc81-c3027734bba8.PNG)  
+We found the hashed passwords within ^#%$.  
 Exit back out to Kali. From here we can use John the Ripper:  
-![red6](https://user-images.githubusercontent.com/32025331/155894961-05ed83c8-ab77-40f0-b8e0-33995815607d.PNG)
+![red6](https://user-images.githubusercontent.com/32025331/155894961-05ed83c8-ab77-40f0-b8e0-33995815607d.PNG)  
 SSH into the webserver using Steven’s credentials:  
 ~~~
 Ssh steven@192.168.1.110
