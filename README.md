@@ -1,5 +1,5 @@
 ## Blue Team: Summary of Operations
-- Table of Contents
+Table of Contents
 - Network Topology
 - Description of Targets
 - Monitoring the Targets
@@ -10,14 +10,14 @@
 The following machines were identified on the network:
 
 ML-REFVM-674427
-  Operating System: Windows 10
-  Purpose: Azure Virtual Environment
-  IP Address: 192.168.1.1
+Operating System: Windows 10
+Purpose: Azure Virtual Environment
+IP Address: 192.168.1.1
   
 Kali
-  Operating System: Kali Linux
-  Purpose: Attack machine
-  IP Address: 192.168.1.90
+Operating System: Kali Linux
+Purpose: Attack machine
+IP Address: 192.168.1.90
   
 ELK
   Operating System: Linux
