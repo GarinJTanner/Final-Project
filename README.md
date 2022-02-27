@@ -10,49 +10,52 @@ Table of Contents
 The following machines were identified on the network:
 
 ML-REFVM-674427  
-Operating System: Windows 10  
-Purpose: Azure Virtual Environment  
-IP Address: 192.168.1.1  
+- Operating System: Windows 10  
+- Purpose: Azure Virtual Environment  
+- IP Address: 192.168.1.1  
   
 Kali  
-Operating System: Kali Linux  
-Purpose: Attack machine  
-IP Address: 192.168.1.90  
+- Operating System: Kali Linux  
+- Purpose: Attack machine  
+- IP Address: 192.168.1.90  
   
 ELK  
-  Operating System: Linux  
-  Purpose: View web alerts via Kibana  
-  IP Address: 192.168.1.100  
+- Operating System: Linux  
+- Purpose: View web alerts via Kibana  
+- IP Address: 192.168.1.100  
   
 Capstone  
-  Operating System: Linux  
-  Purpose: Alert testing, attack target  
-  IP Address: 192.168.1.105  
+- Operating System: Linux  
+- Purpose: Alert testing, attack target  
+- IP Address: 192.168.1.105  
 
 Target 1
-  Operating System: Linux 3.2 - 4.9
-  Purpose: WordPress Vulnerability
-  IP Address: 192.168.1.110
+- Operating System: Linux 3.2 - 4.9
+- Purpose: WordPress Vulnerability
+- IP Address: 192.168.1.110
 
 Target 2
-  Operating System: Linux
-  Purpose: 
-  IP Address: 192.168.1.115
+- Operating System: Linux
+- Purpose: 
+- IP Address: 192.168.1.115
+
 
 ### Description of Targets
   The target of this attack was: 192.168.1.110
-  Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented: Excessive HTTP errors, HTTP request size monitor, and CPU Usage Monitor.
+  Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented: Excessive HTTP errors, HTTP request size monitor, and CPU Usage Monitor.  
 
 
 ### Monitoring the Targets
   Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
-Excessive HTTP Errors
+Excessive HTTP Errors  
 
-Alert 1 is implemented as follows:
-Metric: WHEN max() OF system.process.cpu.total.pct OVER all documents
-Threshold: IS ABOVE 0.5 FOR THE LAST 5 minutes
-Vulnerability Mitigated: Brute force attacks
-Reliability: Medium reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials. 
+Alert 1 is implemented as follows:  
+Metric: WHEN max() OF system.process.cpu.total.pct OVER all documents  
+Threshold: IS ABOVE 0.5 FOR THE LAST 5 minutes  
+Vulnerability Mitigated: Brute force attacks  
+Reliability: Medium reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials.  
+
+
 HTTP Request Size Monitor
 
 Alert 2 is implemented as follows:
