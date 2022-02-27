@@ -33,11 +33,6 @@ The following machines were identified on the network:
 - Operating System: Linux 3.2 - 4.9
 - Purpose: WordPress Vulnerability
 - IP Address: 192.168.1.110
-
-**Target 2**
-- Operating System: Linux
-- Purpose: 
-- IP Address: 192.168.1.115  
   
 
 ## Description of Targets
