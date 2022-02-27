@@ -40,6 +40,7 @@ wpscan –url http://192.168.1.110/wordpress
 
 We then found two login names: Steven and Michael  
 ![red3](https://user-images.githubusercontent.com/32025331/155894958-c2fc6d12-f3ff-47b4-93a7-9a038cbdac2a.PNG)
+
 By sheer luck, we guessed the password without brute force:  
 ~~~
 - ssh michael@192.168.1.110
