@@ -30,7 +30,7 @@ The following vulnerabilities were identified:
 - Hashed passwords that are unsalted can be easily cracked using free softare like john the ripper.
 - *Severity:* Medium
 
-**CWE-269** - Improper Privilege Management**
+**CWE-269 - Improper Privilege Management**
 - The server does not properly assign privileges for users, allowing for a known Python vulnerability to be executed.
 - *Severity:* Medium
 
