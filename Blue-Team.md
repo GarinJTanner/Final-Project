@@ -59,11 +59,11 @@ The following machines were identified on the network:
 **HTTP Request Size Monitor**  
 - **Metric:** Packetbeat  
 - **Threshold:** WHEN sum() of 'http.request.bytes' OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute  
-- **Vulnerability Mitigated:** Brute force  
-- **Reliability:** High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.   
+- **Vulnerability Mitigated:** DDoS attack  
+-  **Reliability:** High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.   
 
 **CPU Usage Monitor**  
 - **Metric:** Metricbeat  
-- **Threshold:** WHEN max() OF 'system.process.total.pct' OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes  
-- **Vulnerability Mitigated:** TODO  
-- **Reliability:** TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.   
+- **Threshold:** WHEN max() OF 'system.process.cpu.total.pct' OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes  
+- **Vulnerability Mitigated:** DDoS attack  
+- **Reliability:** Low/Medium reliability depending on web traffic.
