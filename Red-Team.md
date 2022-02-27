@@ -7,7 +7,9 @@
 
 ## Exposed Services
 Nmap scan results for each machine reveal the below services and OS details:  
-$ nmap -sV 192.168.1  
+~~~
+nmap -sV 192.168.1  
+~~~
 
 [picture]
 
