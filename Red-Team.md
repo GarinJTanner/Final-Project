@@ -8,10 +8,10 @@
 ## Exposed Services
 Nmap scan results for each machine reveal the below services and OS details:  
 ~~~
-nmap -sV 192.168.1  
+nmap -sV 192.168.1.110  
 ~~~
 
-![red1](https://user-images.githubusercontent.com/32025331/155894956-f1c31fe2-82f8-4a57-a74d-95c5a0dda68f.PNG)
+![red111](https://user-images.githubusercontent.com/32025331/155897831-3ed2d82f-ea06-4b2b-88a5-ca45a22de921.PNG)   
 
 This scan identifies the services below as potential points of entry:  
   
