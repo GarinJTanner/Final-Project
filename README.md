@@ -49,26 +49,26 @@ Target 2
   Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:  
   
 **Excessive HTTP Errors**  
-Alert 1 is implemented as follows:  
-Metric: WHEN count() GROUP OVER top 5 'htttp.response.status_code'  
-Threshold: IS ABOVE 400 FOR THE LAST 5 minutes  
-Vulnerability Mitigated: Brute force attacks  
-Reliability: Medium reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials.  
+Excessive HTTP Errors is implemented as follows:  
+**Metric:** Packetbeat
+**Threshold:** WHEN count() GROUP OVER top 5 'htttp.response.status_code'IS ABOVE 400 FOR THE LAST 5 minutes  
+**Vulnerability Mitigated:** Brute force attacks  
+**Reliability:** Medium reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials.  
 
 
 **HTTP Request Size Monitor**  
 Alert 2 is implemented as follows:  
-Metric: WHEN sum() of http.request.bytes OVER all documents  
-Threshold: IS ABOVE 3500 FOR THE LAST 1 minute  
-Vulnerability Mitigated: Brute force  
-Reliability: High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.  
+**Metric:** Packetbeat
+**Threshold:** WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute  
+**Vulnerability Mitigated:** Brute force  
+**Reliability:** High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.  
 
 **CPU Usage Monitor**  
 Alert 3 is implemented as follows:  
-Metric: WHEN max() OF system.process.total.pct OVER all documents  
-Threshold: IS ABOVE 0.5 FOR THE LAST 5 minutes  
-Vulnerability Mitigated: TODO  
-Reliability: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.  
+**Metric:** Metricbeat
+**Threshold:** WHEN max() OF system.process.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes  
+**Vulnerability Mitigated:** TODO  
+**Reliability:** TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.  
 TODO Note: Explain at least 3 alerts. Add more if time allows.  
 Suggestions for Going Further (Optional)  
 
