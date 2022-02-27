@@ -53,7 +53,7 @@ The following machines were identified on the network:
 - **Metric:** Packetbeat  
 - **Threshold:** WHEN count() GROUP OVER top 5 'htttp.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes  
 - **Vulnerability Mitigated:** Brute force attacks  
-- **Reliability:** Medium reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials.  
+- **Reliability:** Medium/High reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials.  
   
 
 **HTTP Request Size Monitor**  
