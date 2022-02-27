@@ -9,25 +9,25 @@ Table of Contents
 
 The following machines were identified on the network:
 
-ML-REFVM-674427
-Operating System: Windows 10
-Purpose: Azure Virtual Environment
-IP Address: 192.168.1.1
+ML-REFVM-674427  
+Operating System: Windows 10  
+Purpose: Azure Virtual Environment  
+IP Address: 192.168.1.1  
   
-Kali
-Operating System: Kali Linux
-Purpose: Attack machine
-IP Address: 192.168.1.90
+Kali  
+Operating System: Kali Linux  
+Purpose: Attack machine  
+IP Address: 192.168.1.90  
   
-ELK
-  Operating System: Linux
-  Purpose: View web alerts via Kibana
-  IP Address: 192.168.1.100
+ELK  
+  Operating System: Linux  
+  Purpose: View web alerts via Kibana  
+  IP Address: 192.168.1.100  
   
-Capstone
-  Operating System: Linux
-  Purpose: Alert testing, attack target
-  IP Address: 192.168.1.105
+Capstone  
+  Operating System: Linux  
+  Purpose: Alert testing, attack target  
+  IP Address: 192.168.1.105  
 
 Target 1
   Operating System: Linux 3.2 - 4.9
