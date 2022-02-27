@@ -8,7 +8,7 @@
 
 
 
-# Network Topology  
+## Network Topology  
   
 The following machines were identified on the network:
 
@@ -43,12 +43,12 @@ The following machines were identified on the network:
 - IP Address: 192.168.1.115  
   
 
-# Description of Targets
+## Description of Targets
   The target of this attack was: 192.168.1.110  
   Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented: Excessive HTTP errors, HTTP request size monitor, and CPU Usage Monitor.  
   
 
-# Monitoring the Targets
+## Monitoring the Targets
   Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:  
    
  
