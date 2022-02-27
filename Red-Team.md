@@ -79,7 +79,7 @@ select post_content from wp_posts;
 ~~~
 ![red9](https://user-images.githubusercontent.com/32025331/155896987-d9932ea6-75bb-4b88-ae79-67f5b9a46999.PNG)  
   
-**Flag 4 from Steven’s account:  **  
+**Flag 4 from Steven’s account**  
 - Tools used: SSH, MySQL, johntheripper  
 - Using the MySQL credentials from before:  
 ~~~
