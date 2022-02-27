@@ -32,6 +32,10 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 **flag1{b9bbcb33e11b80be759c4e844862482d}**  
 Tools used: dirb, wpscan  
 - Using dirb we were able to find a wordpress page: 192.168.1.110/wordpress  
+
+![red10](https://user-images.githubusercontent.com/32025331/155897106-083e1297-c5d6-490f-af59-1ac251500554.PNG)
+
+
 - From there we ran wpscan: 
 ~~~
 wpscan –url http://192.168.1.110/wordpress
