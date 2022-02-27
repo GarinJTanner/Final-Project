@@ -6,7 +6,7 @@
 - [Exploitation](https://github.com/GarinJTanner/Final-Project/blob/main/Red-Team.md#exploitation)
 
 ## Exposed Services
-Nmap scan results for target 1 machine reveal the below services and OS details:  
+Nmap scan results for 192.168.1.110 machine reveal the below services and OS details:  
 ~~~
 nmap -sV 192.168.1.110  
 ~~~
@@ -15,7 +15,6 @@ nmap -sV 192.168.1.110
 
 This scan identifies the services below as potential points of entry:  
   
-Target 1  
 - OpenSSH 6.7p1 Debian 5+deb8u4 (protocol 2.0)  
 - Apache httpd 2.4.10 ((Debian))  
 
@@ -23,12 +22,18 @@ Target 1
 
 The following vulnerabilities were identified:
 
-Target 1
-- Default wordpress folder names
-- Weak server password
-- Unsalted hashed passwords
-- Unpatched WordPress software
-  
+CWE-521 - Weak server password
+- Server does not require strong user passwords, making it vulnerable to brute force attacks. 
+- Severity: High
+
+CWE-916 - Unsalted hashed passwords
+- Hashed passwords that are unsalted can be easily cracked using free softare like john the ripper.
+- Severity - Medium  
+
+
+Unpatched WordPress software (Version 4.8.18)
+- CWE-79
+- 
  ## Exploitation
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 
