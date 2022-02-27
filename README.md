@@ -50,27 +50,28 @@ Target 2
   
 **Excessive HTTP Errors**  
 Alert 1 is implemented as follows:  
-Metric: WHEN count() GROUP OVER top 5 'htttp.response.status_code'   
-Threshold: IS ABOVE 400 FOR THE LAST 5 minutes 
+Metric: WHEN count() GROUP OVER top 5 'htttp.response.status_code'  
+Threshold: IS ABOVE 400 FOR THE LAST 5 minutes  
 Vulnerability Mitigated: Brute force attacks  
 Reliability: Medium reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials.  
 
 
-**HTTP Request Size Monitor**
-Alert 2 is implemented as follows:
-Metric: WHEN sum() of http.request.bytes OVER all documents
-Threshold: IS ABOVE 3500 FOR THE LAST 1 minute
-Vulnerability Mitigated: Brute force
+**HTTP Request Size Monitor**  
+Alert 2 is implemented as follows:  
+Metric: WHEN sum() of http.request.bytes OVER all documents  
+Threshold: IS ABOVE 3500 FOR THE LAST 1 minute  
+Vulnerability Mitigated: Brute force  
 Reliability: High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.  
 
-**CPU Usage Monitor**
-Alert 3 is implemented as follows:
-Metric: WHEN max() OF system.process.total.pct OVER all documents
-Threshold: IS ABOVE 0.5 FOR THE LAST 5 minutes
-Vulnerability Mitigated: TODO
-Reliability: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
-TODO Note: Explain at least 3 alerts. Add more if time allows.
-Suggestions for Going Further (Optional)
+**CPU Usage Monitor**  
+Alert 3 is implemented as follows:  
+Metric: WHEN max() OF system.process.total.pct OVER all documents  
+Threshold: IS ABOVE 0.5 FOR THE LAST 5 minutes  
+Vulnerability Mitigated: TODO  
+Reliability: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.  
+TODO Note: Explain at least 3 alerts. Add more if time allows.  
+Suggestions for Going Further (Optional)  
+
 TODO:
 Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain how to implement each patch.
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
