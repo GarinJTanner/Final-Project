@@ -54,7 +54,7 @@ Password: michael
 cd ../../var/www/html
 grep -RE flag1
 ~~~
-![red4](https://user-images.githubusercontent.com/32025331/155894959-9c35c8ed-fc7c-4049-8b13-c03f6d785452.PNG)  
+![red222](https://user-images.githubusercontent.com/32025331/155898152-706f9b4c-607d-4a1a-83f1-742a2217463d.PNG)  
   
   
 **flag2{fc3fd58dcdad9ab23faca6e9a36e581c}**  
