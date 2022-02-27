@@ -35,7 +35,7 @@ The following vulnerabilities were identified:
 - *Severity:* Medium
 
  ## Exploitation
-The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
+The Red Team was able to penetrate the webserver and retrieve the following confidential data:
 
 
 ### flag1{b9bbcb33e11b80be759c4e844862482d}
