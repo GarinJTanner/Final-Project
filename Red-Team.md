@@ -22,17 +22,17 @@ This scan identifies the services below as potential points of entry:
 
 The following vulnerabilities were identified:
 
-CWE-521 - Weak server password
+**CWE-521 - Weak server password
 - Server does not require strong user passwords, making it vulnerable to brute force attacks. 
-- Severity: High
+- *Severity:* High
 
-CWE-916 - Unsalted hashed passwords
+**CWE-916 - Unsalted hashed passwords
 - Hashed passwords that are unsalted can be easily cracked using free softare like john the ripper.
-- Severity - Medium  
+- *Severity:* Medium  
 
 
-Unpatched WordPress software (Version 4.8.18)
-- CWE-79
+CWE-79 -Unpatched WordPress software (Version 4.8.18)
+- 
 - 
  ## Exploitation
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
