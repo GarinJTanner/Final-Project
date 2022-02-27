@@ -1,12 +1,12 @@
 ## Blue Team: Summary of Operations
-Table of Contents
+**Table of Contents**
 - Network Topology
 - Description of Targets
 - Monitoring the Targets
 - Patterns of Traffic & Behavior
 - Suggestions for Going Further
 - Network Topology  
-
+  
 The following machines were identified on the network:
 
 **ML-REFVM-674427**  
