@@ -10,8 +10,11 @@ Table of Contents
 The following machines were identified on the network:
 
 ML-REFVM-674427
+
 Operating System: Windows 10
+
 Purpose: Azure Virtual Environment
+
 IP Address: 192.168.1.1
   
 Kali
