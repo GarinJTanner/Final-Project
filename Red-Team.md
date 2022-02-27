@@ -6,7 +6,7 @@
 - [Exploitation](https://github.com/GarinJTanner/Final-Project/blob/main/Red-Team.md#exploitation)
 
 ## Exposed Services
-Nmap scan results for each machine reveal the below services and OS details:  
+Nmap scan results for target 1 machine reveal the below services and OS details:  
 ~~~
 nmap -sV 192.168.1.110  
 ~~~
