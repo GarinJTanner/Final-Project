@@ -1,7 +1,7 @@
 # Red Team: Summary of Operations
 
 ## Table of Contents
-- Exposed Services
+[Exposed Services](https://github.com/GarinJTanner/Final-Project/blob/main/Red-Team.md#exposed-services)
 - Critical Vulnerabilities
 - Exploitation
 
@@ -18,7 +18,9 @@ This scan identifies the services below as potential points of entry:
 Target 1  
 - OpenSSH 6.7p1 Debian 5+deb8u4 (protocol 2.0)  
 - Apache httpd 2.4.10 ((Debian))  
-  
+
+## Critical Vulnerabilities
+
 The following vulnerabilities were identified on each target:
 - Target 1
 - Weak server password
