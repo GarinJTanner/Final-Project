@@ -29,9 +29,9 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 
 
 **flag1{b9bbcb33e11b80be759c4e844862482d}**
-- Tools used: dirb, wpscan  
--- Using dirb we were able to find a wordpress page: 192.168.1.110/wordpress  
--- From there we ran wpscan: 
+Tools used: dirb, wpscan  
+- Using dirb we were able to find a wordpress page: 192.168.1.110/wordpress  
+- From there we ran wpscan: 
 ~~~
 wpscan –url http://192.168.1.110/wordpress
 ~~~
@@ -39,10 +39,10 @@ wpscan –url http://192.168.1.110/wordpress
 
 -- We then found two login names: Steven and Michael  
 [picture]  
--- By sheer luck, we guessed the password without brute force:  
--- ssh michael@192.168.1.110
--- Password:  michael
---  Commands:
+- By sheer luck, we guessed the password without brute force:  
+- ssh michael@192.168.1.110
+- Password:  michael
+-  Commands:
 ~~~
 cd ../../var/www/html
 grep -RE flag1
@@ -55,9 +55,7 @@ cd ../../var/www/
 grep -RE flag2
 ~~~
 
-Follow same steps as flag 1
-cd ../../var/www/
-grep -RE flag2
+
 Flag 3,4 from MySQL:
 Tools used: SSH, MySQL
 ssh michael@192.168.1.110
