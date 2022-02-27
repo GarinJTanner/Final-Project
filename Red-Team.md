@@ -64,10 +64,11 @@ Tools used: SSH, MySQL
 ssh michael@192.168.1.110
 Password: michael
 cd /var/www/html/wordpress
+nano wp-config.php  
 ~~~
 
+
 ~~~
-nano wp-config.php  
 mysql -u root -pR@v3nSecurity  
 ~~~
 
