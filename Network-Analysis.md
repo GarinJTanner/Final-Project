@@ -43,7 +43,7 @@ matthijs.devries
 166.62.111.64  
 
 4. As a bonus, retrieve the desktop background of the Windows host.  
-![net1](https://user-images.githubusercontent.com/32025331/155894515-dae08624-162f-4efb-9343-f806fea19696.PNG)
+![net](https://user-images.githubusercontent.com/32025331/155894557-3e5a998f-0702-4818-82a7-fb9516b6e514.PNG)
 
 ## Illegal Downloads
 IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.  
