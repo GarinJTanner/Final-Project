@@ -43,4 +43,21 @@ matthijs.devries
 166.62.111.64  
 
 4. As a bonus, retrieve the desktop background of the Windows host.  
-[pictures]
+![net1](https://user-images.githubusercontent.com/32025331/155894515-dae08624-162f-4efb-9343-f806fea19696.PNG)
+
+## Illegal Downloads
+IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.  
+- IT shared the following about the torrent activity:  
+- The machines using torrents live in the range 10.0.0.0/24 and are clients of an AD domain.
+- The DC of this domain lives at 10.0.0.2 and is named DogOfTheYear-DC.
+- The DC is associated with the domain dogoftheyear.net.  
+  
+Your task is to isolate torrent traffic and answer the following questions:  
+1. Find the following information about the machine with IP address 10.0.0.201:
+- MAC Address: 00:16:17:18:66:c8
+- Username: elmer.blanco
+- Operating System: Windows NT 10.0 64bit  
+
+2. Which torrent file did the user download?
+- Betty_Boop_Rhythm_on_the_reservation.avi.torrent
+
