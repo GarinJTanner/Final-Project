@@ -1,11 +1,8 @@
 # Blue Team: Summary of Operations
 ## **Table of Contents**
-- Network Topology
-- Description of Targets
-- Monitoring the Targets
-- Patterns of Traffic & Behavior
-- Suggestions for Going Further
-
+- [Network Topology](https://github.com/GarinJTanner/Final-Project/blob/main/Blue-Team.md#network-topology)
+- [Description of Targets](https://github.com/GarinJTanner/Final-Project/blob/main/Blue-Team.md#description-of-targets)
+- [Monitoring the Targets](https://github.com/GarinJTanner/Final-Project/blob/main/Blue-Team.md#monitoring-the-targets)
 
 
 ## Network Topology  
