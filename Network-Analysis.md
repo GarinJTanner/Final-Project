@@ -54,10 +54,10 @@ IT shared the following about the torrent activity:
   
 Your task is to isolate torrent traffic and answer the following questions:  
 1. Find the following information about the machine with IP address 10.0.0.201:
-   MAC Address: 00:16:17:18:66:c8
-   Username: elmer.blanco
-   Operating System: Windows NT 10.0 64bit  
+  - MAC Address: 00:16:17:18:66:c8
+  - Username: elmer.blanco
+  - Operating System: Windows NT 10.0 64bit  
 
 2. Which torrent file did the user download?
-   Betty_Boop_Rhythm_on_the_reservation.avi.torrent
+  - Betty_Boop_Rhythm_on_the_reservation.avi.torrent
 
