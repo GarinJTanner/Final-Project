@@ -21,8 +21,10 @@ Target 1
 
 ## Critical Vulnerabilities
 
-The following vulnerabilities were identified on each target:
-- Target 1
+The following vulnerabilities were identified:
+
+Target 1
+- Default wordpress folder names
 - Weak server password
 - Unsalted hashed passwords
 - Unpatched WordPress software
