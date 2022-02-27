@@ -104,7 +104,7 @@ select user_login, user_pass from wp_users;
 ![red555](https://user-images.githubusercontent.com/32025331/155898316-716315ab-4684-4dbe-bbad-8c096ebbd92a.PNG)  
 We found the hashed passwords within the wp_users table.  
 Exit back out to Kali. From here we can use John the Ripper:  
-![red6](https://user-images.githubusercontent.com/32025331/155894961-05ed83c8-ab77-40f0-b8e0-33995815607d.PNG)  
+
 SSH into the webserver using Steven’s credentials:  
 ~~~
 Ssh steven@192.168.1.110
