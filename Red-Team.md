@@ -1,9 +1,9 @@
 # Red Team: Summary of Operations
 
 ## Table of Contents
-[Exposed Services](https://github.com/GarinJTanner/Final-Project/blob/main/Red-Team.md#exposed-services)
-- Critical Vulnerabilities
-- Exploitation
+- [Exposed Services](https://github.com/GarinJTanner/Final-Project/blob/main/Red-Team.md#exposed-services)
+- [Critical Vulnerabilities](https://github.com/GarinJTanner/Final-Project/blob/main/Red-Team.md#critical-vulnerabilities)
+- [Exploitation](https://github.com/GarinJTanner/Final-Project/blob/main/Red-Team.md#exploitation)
 
 ## Exposed Services
 Nmap scan results for each machine reveal the below services and OS details:  
