@@ -5,7 +5,7 @@ Table of Contents
 - Monitoring the Targets
 - Patterns of Traffic & Behavior
 - Suggestions for Going Further
-- Network Topology
+- Network Topology  
 
 The following machines were identified on the network:
 
