@@ -41,7 +41,7 @@ Target 2
 
 
 ### Description of Targets
-  The target of this attack was: 192.168.1.110
+  The target of this attack was: 192.168.1.110  
   Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented: Excessive HTTP errors, HTTP request size monitor, and CPU Usage Monitor.  
 
 
@@ -50,25 +50,26 @@ Target 2
   
 **Excessive HTTP Errors**  
 Excessive HTTP Errors is implemented as follows:  
-**Metric:** Packetbeat
+**Metric:** Packetbeat  
 **Threshold:** WHEN count() GROUP OVER top 5 'htttp.response.status_code'IS ABOVE 400 FOR THE LAST 5 minutes  
 **Vulnerability Mitigated:** Brute force attacks  
 **Reliability:** Medium reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials.  
-
+  
 
 **HTTP Request Size Monitor**  
 Alert 2 is implemented as follows:  
-**Metric:** Packetbeat
+**Metric:** Packetbeat  
 **Threshold:** WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute  
 **Vulnerability Mitigated:** Brute force  
-**Reliability:** High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.  
+**Reliability:** High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.    
 
 **CPU Usage Monitor**  
 Alert 3 is implemented as follows:  
-**Metric:** Metricbeat
+**Metric:** Metricbeat  
 **Threshold:** WHEN max() OF system.process.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes  
 **Vulnerability Mitigated:** TODO  
-**Reliability:** TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.  
+**Reliability:** TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.   
+
 TODO Note: Explain at least 3 alerts. Add more if time allows.  
 Suggestions for Going Further (Optional)  
 
