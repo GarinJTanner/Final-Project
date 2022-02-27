@@ -47,7 +47,8 @@ By sheer luck, we guessed the password without brute force:
 cd ../../var/www/html
 grep -RE flag1
 ~~~
-
+![red4](https://user-images.githubusercontent.com/32025331/155894959-9c35c8ed-fc7c-4049-8b13-c03f6d785452.PNG)
+  
 **flag2{fc3fd58dcdad9ab23faca6e9a36e581c}**  
 - Follow same steps as flag 1 to ssh into the server  
 ~~~ 
@@ -64,14 +65,14 @@ ssh michael@192.168.1.110
 Password: michael
 cd /var/www/html/wordpress
 ~~~
-![red4](https://user-images.githubusercontent.com/32025331/155894959-9c35c8ed-fc7c-4049-8b13-c03f6d785452.PNG)
+
 ~~~
 nano wp-config.php  
 mysql -u root -pR@v3nSecurity  
 ~~~
 
 **Flag 4 from Steven’s account:  **  
-- Tools used: MySQL, johntheripper  
+- Tools used: SSH, MySQL, johntheripper  
 - Using the MySQL credentials from before:  
 ~~~
 mysql -u root -pR@v3nSecurity
