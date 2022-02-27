@@ -9,7 +9,7 @@ Table of Contents
 
 The following machines were identified on the network:
 
-ML-REFVM-674427  
+ML-REFVM-674427**  
 - Operating System: Windows 10  
 - Purpose: Azure Virtual Environment  
 - IP Address: 192.168.1.1  
@@ -46,8 +46,9 @@ Target 2
 
 
 ### Monitoring the Targets
-  Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
-Excessive HTTP Errors  
+  Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:  
+  
+**Excessive HTTP Errors**  
 
 Alert 1 is implemented as follows:  
 Metric: WHEN max() OF system.process.cpu.total.pct OVER all documents  
@@ -56,14 +57,15 @@ Vulnerability Mitigated: Brute force attacks
 Reliability: Medium reliability depending on the amount of traffic coming to the web server. May produce false positives if the only web traffic is coming from a single user mistyping their credentials.  
 
 
-HTTP Request Size Monitor
+**HTTP Request Size Monitor**
 
 Alert 2 is implemented as follows:
 Metric: WHEN sum() of http.request.bytes OVER all documents
 Threshold: IS ABOVE 3500 FOR THE LAST 1 minute
 Vulnerability Mitigated: Brute force
-Reliability: High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.
-CPU Usage Monitor
+Reliability: High reliability. Given the simplicity of the website, typical traffic should not exceed the appointed threshold.  
+
+**CPU Usage Monitor**
 
 Alert 3 is implemented as follows:
 Metric: WHEN max() OF system.process.total.pct OVER all documents
