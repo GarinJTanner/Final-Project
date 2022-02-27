@@ -30,9 +30,6 @@ The following vulnerabilities were identified:
 - Hashed passwords that are unsalted can be easily cracked using free softare like john the ripper.
 - *Severity:* Medium
 
-**CWE-79 - Unpatched WordPress software (Version 4.8.18)**
-- 
-- 
  ## Exploitation
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 
