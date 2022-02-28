@@ -27,7 +27,7 @@ The following vulnerabilities were identified:
 - *Severity:* High
 
 **CWE-916 - Unsalted hashed passwords**
-- Hashed passwords that are unsalted can be easily cracked using free softare like john the ripper.
+- Hashed passwords that are unsalted can be easily cracked using free softare, like John the Ripper.
 - *Severity:* Medium/High
 
 **CWE-269 - Improper Privilege Management**
