@@ -28,11 +28,11 @@ The following vulnerabilities were identified:
 
 **CWE-916 - Unsalted hashed passwords**
 - Hashed passwords that are unsalted can be easily cracked using free softare like john the ripper.
-- *Severity:* Medium
+- *Severity:* Medium/High
 
 **CWE-269 - Improper Privilege Management**
 - The server does not properly assign privileges for users, allowing for a known Python vulnerability to be executed.
-- *Severity:* Medium
+- *Severity:* Medium/High
 
  ## Exploitation
 The Red Team was able to penetrate the webserver and retrieve the following confidential data:
