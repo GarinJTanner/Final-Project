@@ -97,7 +97,7 @@ select post_content from wp_posts;
 ![red443](https://user-images.githubusercontent.com/32025331/155898281-266c6765-2025-49e4-96d2-a7b4f359dbd8.PNG)  
   
 **Flag 4 from Steven’s account**  
-- Tools used: SSH, MySQL, johntheripper  
+- Tools used: SSH, MySQL, John the Ripper  
 - Using the MySQL credentials from before:  
 ~~~
 mysql -u root -pR@v3nSecurity
